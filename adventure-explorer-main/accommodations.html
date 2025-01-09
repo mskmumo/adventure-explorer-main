@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/index-style.css">
+	<link rel="stylesheet" href="css/accommodations-style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<title>Accommodations - Maisha Afrika Adventures</title>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="logo">Maisha Afrika</div>
+		<div class="nav-links">
+			<a href="index.html">Home</a>
+			<a href="destinations.html">Destinations</a>
+			<a href="packages.html">Packages</a>
+			<a href="accommodations.html" class="active">Stay</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<div class="toggle"></div>
+	</nav>
+
+	<section class="accommodation-filters">
+		<div class="container">
+			<div class="filter-group">
+				<label>Price Range</label>
+				<div class="price-slider">
+					<input type="range" min="50" max="1000" value="500" class="price-range">
+					<span class="price-value">$500/night</span>
+				</div>
+			</div>
+			<div class="filter-group">
+				<label>Property Type</label>
+				<select>
+					<option value="">All Types</option>
+					<option value="hotel">Hotels</option>
+					<option value="lodge">Lodges</option>
+					<option value="resort">Resorts</option>
+					<option value="camp">Luxury Camps</option>
+				</select>
+			</div>
+			<div class="filter-group">
+				<label>Location</label>
+				<select>
+					<option value="">All Locations</option>
+					<option value="masai-mara">Masai Mara</option>
+					<option value="serengeti">Serengeti</option>
+					<option value="zanzibar">Zanzibar</option>
+				</select>
+			</div>
+			<div class="filter-group">
+				<label>Rating</label>
+				<select>
+					<option value="">Any Rating</option>
+					<option value="5">5 Stars</option>
+					<option value="4">4+ Stars</option>
+					<option value="3">3+ Stars</option>
+				</select>
+			</div>
+		</div>
+	</section>
+
+	<section class="accommodations-grid">
+		<div class="container">
+			<div class="accommodation-card">
+				<div class="accommodation-image">
+					<img src="assets/OIP.jpg" alt="Luxury Lodge">
+					<div class="accommodation-badge">Featured</div>
+					<div class="accommodation-rating">
+						<i class="fas fa-star"></i>
+						<span>4.9</span>
+					</div>
+				</div>
+				<div class="accommodation-content">
+					<h3>Serengeti Luxury Lodge</h3>
+					<div class="accommodation-meta">
+						<span><i class="fas fa-map-marker-alt"></i> Serengeti, Tanzania</span>
+						<span><i class="fas fa-hotel"></i> Lodge</span>
+					</div>
+					<div class="amenities">
+						<span><i class="fas fa-wifi"></i> Free WiFi</span>
+						<span><i class="fas fa-swimming-pool"></i> Pool</span>
+						<span><i class="fas fa-utensils"></i> Restaurant</span>
+						<span><i class="fas fa-spa"></i> Spa</span>
+					</div>
+					<div class="accommodation-description">
+						<p>Experience luxury in the heart of the Serengeti with stunning views and world-class amenities.</p>
+					</div>
+					<div class="booking-platforms">
+						<h4>Book Through:</h4>
+						<div class="platform-links">
+							<a href="#" class="booking-link">
+								<img src="assets/booking-com.png" alt="Booking.com">
+								<span>From $450/night</span>
+							</a>
+							<a href="#" class="airbnb-link">
+								<img src="assets/airbnb.png" alt="Airbnb">
+								<span>From $425/night</span>
+							</a>
+						</div>
+					</div>
+					<div class="accommodation-actions">
+						<button class="btn view-details">View Details</button>
+						<button class="btn-outline save-accommodation">
+							<i class="far fa-heart"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- More accommodation cards will be added dynamically -->
+		</div>
+	</section>
+
+	<section class="accommodation-map">
+		<div class="container">
+			<h2>Find Accommodations</h2>
+			<div class="map-container">
+				<!-- Map will be integrated here -->
+				<div id="accommodation-map"></div>
+			</div>
+		</div>
+	</section>
+
+	<div class="accommodation-modal" style="display: none;">
+		<div class="modal-content">
+			<span class="close-modal">&times;</span>
+			<div class="modal-body">
+				<!-- Content will be populated dynamically -->
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<!-- Footer content same as other pages -->
+	</footer>
+
+	<script src="js/index.js"></script>
+	<script src="js/accommodations.js"></script>
+	<!-- Add map service script (e.g., Google Maps) -->
+</body>
+</html>
